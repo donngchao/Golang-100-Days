@@ -13,14 +13,14 @@ func main() {
 	3.常数：
 		固定的数值：100，"abc"
 	 */
-	fmt.Println(100)
-	fmt.Println("hello")
+	fmt.Println(100)//直接打印对应的数值：100
+	fmt.Println("hello")//直接打印对应的字符串："hello"
 
 	//1.定义常量
-	const PATH string = "http:www.baidu.com"
+	const PATH string = "http://www.baidu.com"
 	const PI = 3.14
-	fmt.Println(PATH)
-	//fmt.Println(PI)
+	fmt.Println(PATH)//http://www.baidu.com
+	fmt.Println(PI)//3.14
 
 	//2.尝试修改常量的数值
 	//PATH = "http://www.sina.com" //cannot assign to PATH
@@ -30,7 +30,7 @@ func main() {
 	const (
 		MALE   = 0
 		FEMALE = 1
-		UNKNOW = 3
+		UNKNOWN = 3
 	)
 	//4.一组常量中，如果某个常量没有初始值，默认和上一行一致
 	const (
@@ -40,11 +40,11 @@ func main() {
 		d
 		e
 	)
-	fmt.Printf("%T,%d\n", a, a)
-	fmt.Printf("%T,%d\n", b, b)
-	fmt.Printf("%T,%s\n", c, c)
-	fmt.Printf("%T,%s\n", d, d)
-	fmt.Printf("%T,%s\n", e, e)
+	fmt.Printf("%T,%d\n", a, a)//int,100
+	fmt.Printf("%T,%d\n", b, b)//int,100
+	fmt.Printf("%T,%s\n", c, c)//string,ruby
+	fmt.Printf("%T,%s\n", d, d)//string,ruby
+	fmt.Printf("%T,%s\n", e, e)//string,ruby
 
 	//5. 枚举类型：使用常量组作为枚举类型。一组相关数值的数据
 	const (
@@ -52,6 +52,7 @@ func main() {
 		SUMMER = 1
 		AUTUMN = 2
 		WINTER = 3
+		SEASON = 4
 	)
 
 }

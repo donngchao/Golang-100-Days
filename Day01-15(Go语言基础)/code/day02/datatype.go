@@ -35,21 +35,21 @@ func main() {
 	 //1.布尔类型
 	 var b1 bool
 	 b1 = true
-	 fmt.Printf("%T,%t\n",b1,b1)
+	 fmt.Printf("%T,%t\n",b1,b1)//%t表示以true或者false输出的布尔值：bool,true
 	 b2 :=false
-	 fmt.Printf("%T,%t\n",b2,b2)
+	 fmt.Printf("%T,%t\n",b2,b2)//bool,false
 
 	 //2.整数
 	 var i1 int8
 	 i1 = 100
-	 fmt.Println(i1)
+	 fmt.Println(i1)//100
 	 var i2 uint8
 	 i2 = 200
-	 fmt.Println(i2)
+	 fmt.Println(i2)//200
 
 	 var i3 int
 	 i3 = 1000
-	 fmt.Println(i3)
+	 fmt.Println(i3)//1000
 	 //语法角度：int，int64不认为是同一种类型
 	 //var i4 int64
 	 //i4 = i3 //cannot use i3 (type int) as type int64 in assignment
@@ -58,22 +58,23 @@ func main() {
 	 i5 = 100
 	 var i6 byte
 	 i6 = i5
-	 fmt.Println(i5,i6)
+	 fmt.Println(i5,i6)//100 100
 
 	 var i7 = 100
-	 fmt.Printf("%T,%d\n",i7,i7)
+	 fmt.Printf("%T,%d\n",i7,i7)//int,100
 
 	 //浮点
 	 var f1 float32
 	 f1 = 3.14
 	 var f2 float64
 	 f2 = 4.67
-	 fmt.Printf("%T,%.2f\n",f1,f1)
-	 fmt.Printf("%T,%.3f\n",f2,f2)
-	 fmt.Println(f1)
+	 fmt.Printf("%T,%.2f\n",f1,f1)//float32,3.14
+	 fmt.Printf("%T,%.3f\n",f2,f2)//float64,4.670
+	 fmt.Println(f1)//3.14
+
 
 	 var f3 = 2.55
-	 fmt.Printf("%T\n",f3)
+	 fmt.Printf("%T\n",f3)//float64
 
 
 }
