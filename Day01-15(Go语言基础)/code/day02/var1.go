@@ -34,36 +34,40 @@ func main() {
 	 //第一种：定义变量，然后进行赋值
 	 var num1 int
 	 num1 = 30
-	 fmt.Printf("num1的数值是：%d\n",num1)
+	 fmt.Printf("num1的数值是：%d\n",num1)//num1的数值是：30
 	 //写在一行
 	 var num2 int = 15
-	 fmt.Printf("num2的数值是：%d\n",num2)
+	 fmt.Printf("num2的数值是：%d\n",num2)//num2的数值是：15
 
-	 //第二种：类型推断
+	 var num3 float64 = 13.2
+	 fmt.Printf("num3的数值是：%f\n",num3)//num3的数值是：13.200000
+
+	 //第二种：类型推断,不直接声明变量的类型，由编译器帮我们推断
 	 var name = "王二狗"
-	 fmt.Printf("类型是：%T，数值是:%s\n",name,name)
+	 fmt.Printf("类型是：%T，数值是:%s\n",name,name)//类型是：string，数值是:王二狗
 
-	 //第三种，简短定义，也叫简短声明
+	 //第三种，简短定义，也叫简短声明,只能在函数内使用
 	 sum := 100
-	 fmt.Println(sum)
+	 fmt.Println(sum)//100
 
 	 //多个变量同时定义
 	 var a, b, c int
 	 a = 1
 	 b = 2
 	 c = 3
-	 fmt.Println(a,b,c)
+	 fmt.Println(a,b,c)//1 2 3
 
 	 var m, n int = 100,200
-	 fmt.Println(m,n)
+	 fmt.Println(m,n)//100 200
 
 	 var n1,f1,s1 = 100,3.14,"Go"
-	 fmt.Println(n1,f1,s1)
+	 fmt.Println(n1,f1,s1)//100 3.14 Go
 
 	 var (
 	 	studentName = "李小花"
 	 	age = 18
 	 	sex = "女"
+	 	school = "No.1 Middle School"
 	 )
-	 fmt.Printf("学生姓名：%s，年龄：%d，性别：%s\n",studentName,age,sex)
+	 fmt.Printf("学生姓名：%s，年龄：%d，性别：%s, 学校：%s\n",studentName,age,sex,school)//学生姓名：李小花，年龄：18，性别：女, 学校：No.1 Middle School
 }

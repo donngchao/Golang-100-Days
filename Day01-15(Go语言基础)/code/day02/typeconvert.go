@@ -19,19 +19,23 @@ func main() {
 
 	var b int16
 	b = int16(a)
-	fmt.Println(a,b)
+	fmt.Println(a,b)//10 10
+
+	var newB int32
+	newB = int32(a)
+	fmt.Printf("the type of newB is : %T, and the value of newB is : %v\n",newB,newB)//the type of newB is : int32, and the value of newB is : 10
 
 	f1 := 4.83
 	var c int
 	c = int(f1)
-	fmt.Println(f1,c)
+	fmt.Println(f1,c)//4.83 4
 
 	f1 = float64(a)
-	fmt.Println(f1,a)
+	fmt.Println(f1,a)//10 10
 
 	//b1 := true
 	//a = int8(b1) //cannot convert b1 (type bool) to type int8
 
 	sum := f1 + 100
-	fmt.Printf("%T,%f\n",sum,sum)
+	fmt.Printf("%T,%f\n",sum,sum)//float64,110.000000
 }
